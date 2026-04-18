@@ -1,0 +1,11 @@
+{
+  "name": "world-id-app-lp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static landing page for Shinya Dev Mini Apps (DailyPredict + MealPact)",
+  "scripts": {
+    "vercel-build": "echo 'Static site — no build step needed'",
+    "build": "echo 'Static site — no build step needed'",
+    "dev": "npx http-server -p 3000"
+  }
+}
