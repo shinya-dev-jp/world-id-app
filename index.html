@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shinya Dev — Mini Apps for World App</title>
+  <meta name="description" content="Mini Apps built for World App: DailyPredict (daily prediction game) and MealPact (AI calorie tracker with WLD commitment). Verified humans only. Built on World ID." />
+  <meta property="og:title" content="Shinya Dev — Mini Apps for World App" />
+  <meta property="og:description" content="Mini Apps built for World App. Verified humans only. Built on World ID." />
+  <meta property="og:type" content="website" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { color-scheme: dark; }
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans JP", sans-serif; }
+  </style>
+</head>
+<body class="bg-[#0A0E27] text-white/90 min-h-screen">
+  <main class="mx-auto max-w-2xl px-6 py-12 leading-relaxed">
+
+    <!-- Hero -->
+    <header class="mb-12">
+      <p class="text-xs uppercase tracking-[0.2em] text-emerald-300/70 mb-2">Shinya Dev</p>
+      <h1 class="text-4xl font-bold text-white mb-4">Mini Apps for World App</h1>
+      <p class="text-white/60 leading-relaxed">
+        A small studio building lightweight, single-purpose Mini Apps for the World App
+        ecosystem. All apps are designed for verified humans, run inside World App via
+        the MiniKit SDK, and integrate with World ID for sybil resistance.
+      </p>
+    </header>
+
+    <!-- About -->
+    <section class="mb-12">
+      <h2 class="text-lg font-semibold text-white mb-4">About</h2>
+      <p class="mb-3 text-white/70">
+        Shinya Dev is an indie developer studio based in Japan. Each Mini App is built
+        end-to-end by a single developer with a focus on shipping fast, useful tools
+        that respect user privacy.
+      </p>
+      <dl class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2 text-sm text-white/70 mt-4">
+        <div><dt class="inline font-semibold text-white/90">Stack:</dt> <dd class="inline">Next.js · React · TypeScript · Tailwind · Supabase</dd></div>
+        <div><dt class="inline font-semibold text-white/90">Identity:</dt> <dd class="inline">World ID via MiniKit SDK</dd></div>
+        <div><dt class="inline font-semibold text-white/90">Hosting:</dt> <dd class="inline">Vercel</dd></div>
+        <div><dt class="inline font-semibold text-white/90">Principle:</dt> <dd class="inline">One job per app, done well.</dd></div>
+      </dl>
+    </section>
+
+    <!-- Apps -->
+    <section class="mb-12">
+      <h2 class="text-lg font-semibold text-white mb-5">Apps</h2>
+
+      <!-- DailyPredict -->
+      <article class="rounded-2xl bg-white/5 border border-white/10 p-6 mb-5">
+        <div class="flex items-baseline gap-3 mb-2 flex-wrap">
+          <h3 class="text-xl font-bold text-white">DailyPredict</h3>
+          <span class="text-[10px] uppercase tracking-wider text-emerald-300/80 bg-emerald-300/10 px-2 py-0.5 rounded-full">Social</span>
+        </div>
+        <p class="text-sm text-emerald-200/90 italic mb-3">Predict today. Compete globally.</p>
+        <p class="text-sm text-white/70 mb-5">
+          DailyPredict delivers one question every day — crypto, sports, weather, and world events.
+          Vote Yes or No, see how your prediction stacks up against users worldwide, and climb the
+          leaderboard. Build prediction streaks, earn points, and unlock badges. Verified humans only —
+          every prediction counts.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="https://worldcoin.org/mini-app?app_id=app_9ea9956fcd3bcb53a6accf1e93383e22"
+             class="inline-flex items-center gap-1 px-4 py-2 rounded-full bg-emerald-500 text-white text-xs font-semibold hover:bg-emerald-400 transition-colors">
+             Open in World App →
+          </a>
+          <a href="https://daily-predict-two.vercel.app"
+             class="inline-flex items-center gap-1 px-4 py-2 rounded-full border border-white/20 text-white/80 text-xs hover:bg-white/5 transition-colors">
+             Visit web preview →
+          </a>
+        </div>
+      </article>
+
+      <!-- MealPact -->
+      <article class="rounded-2xl bg-white/5 border border-white/10 p-6 mb-5">
+        <div class="flex items-baseline gap-3 mb-2 flex-wrap">
+          <h3 class="text-xl font-bold text-white">MealPact</h3>
+          <span class="text-[10px] uppercase tracking-wider text-emerald-300/80 bg-emerald-300/10 px-2 py-0.5 rounded-full">Productivity</span>
+        </div>
+        <p class="text-sm text-emerald-200/90 italic mb-3">AI calorie tracker with WLD commitment.</p>
+        <p class="text-sm text-white/70 mb-5">
+          MealPact combines AI-powered food analysis with a commitment challenge. Snap a photo of your
+          meal, let AI instantly calculate calories and nutrients, and join weekly challenges where
+          you deposit 0.1 WLD. Log meals for 5+ days and earn your deposit back plus bonus from
+          dropouts. Build healthy habits with real stakes and real rewards.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="https://worldcoin.org/mini-app?app_id=app_a9be675be0fb8e8f06da1a0f6a5194d1"
+             class="inline-flex items-center gap-1 px-4 py-2 rounded-full bg-emerald-500 text-white text-xs font-semibold hover:bg-emerald-400 transition-colors">
+             Open in World App →
+          </a>
+          <a href="https://mealpact.vercel.app"
+             class="inline-flex items-center gap-1 px-4 py-2 rounded-full border border-white/20 text-white/80 text-xs hover:bg-white/5 transition-colors">
+             Visit web preview →
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <!-- Support -->
+    <section class="mb-12">
+      <h2 class="text-lg font-semibold text-white mb-3">Support &amp; contact</h2>
+      <p class="text-white/70 mb-2">
+        Issue reports, feature requests, business inquiries — anything is welcome.
+      </p>
+      <p>
+        <a href="mailto:shinya.yuda.b@gmail.com"
+           class="text-emerald-300 hover:text-emerald-200 underline underline-offset-2">
+          shinya.yuda.b@gmail.com
+        </a>
+      </p>
+    </section>
+
+    <!-- Legal -->
+    <section class="mb-12">
+      <h2 class="text-lg font-semibold text-white mb-3">Legal</h2>
+      <ul class="list-disc pl-5 space-y-1">
+        <li><a href="/privacy.html" class="text-emerald-300 hover:text-emerald-200 underline underline-offset-2">Privacy Policy</a></li>
+        <li><a href="/terms.html" class="text-emerald-300 hover:text-emerald-200 underline underline-offset-2">Terms of Service</a></li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-6 border-t border-white/10 text-xs text-white/40">
+      <p>© 2026 Shinya Dev. Built for the World App ecosystem.</p>
+      <p class="mt-1">
+        Verified humans only. No personal data collected beyond the World ID nullifier hash.
+      </p>
+    </footer>
+
+  </main>
+</body>
+</html>
