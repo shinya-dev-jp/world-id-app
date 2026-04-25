@@ -14,21 +14,22 @@
   <main class="mx-auto max-w-2xl px-6 py-12 text-sm leading-relaxed">
     <a href="/" class="text-emerald-300 hover:text-emerald-200 text-xs underline underline-offset-2">← Back to home</a>
     <h1 class="text-3xl font-bold text-white mb-2 mt-6">Privacy Policy</h1>
-    <p class="text-white/40 mb-8 text-xs">Last updated: April 18, 2026</p>
+    <p class="text-white/40 mb-8 text-xs">Last updated: April 25, 2026</p>
 
     <section class="mb-6">
       <h2 class="text-lg font-semibold text-white mb-2">1. Overview</h2>
-      <p>This policy covers all Mini Apps published by Shinya Dev, including DailyPredict and MealPact, which operate as Mini Apps within the World App ecosystem.</p>
+      <p>This policy covers all Mini Apps published by Shinya Dev that operate within the World App ecosystem. Currently this applies to <strong>TuringVote</strong>. If additional apps are published in the future, this policy will be updated to cover them.</p>
     </section>
 
     <section class="mb-6">
       <h2 class="text-lg font-semibold text-white mb-2">2. Information We Collect</h2>
       <ul class="list-disc pl-5 space-y-1">
-        <li><strong>World ID Nullifier Hash:</strong> A unique, anonymous identifier derived from your World ID verification. We do not collect your name, email, phone number, or biometric data.</li>
-        <li><strong>App-specific data:</strong>
+        <li><strong>World ID Nullifier Hash:</strong> A unique, anonymous identifier derived from your World ID verification, used to ensure one vote per verified human per question. We do not collect your name, email, phone number, or biometric data.</li>
+        <li><strong>TuringVote app data:</strong>
           <ul class="list-[circle] pl-5 space-y-1 mt-1">
-            <li>DailyPredict: Your prediction choices (Yes/No), streak counts, points, and accuracy statistics.</li>
-            <li>MealPact: Meal photos (processed server-side by Gemini AI, not retained), estimated calories/macros, challenge participation data, and on-chain WLD deposit events.</li>
+            <li>Your vote choice (A or B) and the question ID for each vote you cast.</li>
+            <li>Your interface language preference (English or Japanese), stored locally in your browser.</li>
+            <li>Short-lived rate-limit signals (such as IP-derived hashes) used to prevent abuse. These signals are <strong>not linked to your votes or your World ID</strong> and are discarded after a short retention window.</li>
           </ul>
         </li>
       </ul>
@@ -39,26 +40,25 @@
       <ul class="list-disc pl-5 space-y-1">
         <li>To operate the core functionality of each Mini App.</li>
         <li>To prevent duplicate participation (one verified human per action).</li>
-        <li>To display leaderboards, achievements, and aggregate statistics.</li>
-        <li>To improve app experience through anonymous usage analytics.</li>
+        <li>To compute and display aggregate vote percentages and majority/minority summaries.</li>
+        <li>To improve app experience through anonymous, aggregated usage signals.</li>
       </ul>
     </section>
 
     <section class="mb-6">
       <h2 class="text-lg font-semibold text-white mb-2">4. Data Storage</h2>
-      <p>Your data is stored on Supabase servers located in the Asia-Pacific region. We use Row Level Security (RLS) to protect your data at the database level.</p>
+      <p>Your data is stored on Supabase servers. We use Row Level Security (RLS) and per-table namespacing to protect your data at the database level.</p>
     </section>
 
     <section class="mb-6">
       <h2 class="text-lg font-semibold text-white mb-2">5. Data Sharing</h2>
-      <p>We do not sell, trade, or share your personal data with third parties. Aggregate, anonymized statistics may be displayed publicly (e.g., "62% of humans predicted Yes").</p>
-      <p class="mt-2">Meal photos are processed by Google Gemini API for calorie estimation. Images are not retained beyond the API call.</p>
+      <p>We do not sell, trade, or share your personal data with third parties. Aggregate, anonymized statistics may be displayed publicly within the app (e.g., "62% of verified humans chose Morning person").</p>
     </section>
 
     <section class="mb-6">
       <h2 class="text-lg font-semibold text-white mb-2">6. Your Rights</h2>
       <ul class="list-disc pl-5 space-y-1">
-        <li><strong>Access:</strong> View your activity and statistics within each app.</li>
+        <li><strong>Access:</strong> View your activity and statistics within the app.</li>
         <li><strong>Deletion:</strong> Request deletion of your account and associated data by contacting us.</li>
         <li><strong>Portability:</strong> Request an export of your data in a machine-readable format.</li>
       </ul>

@@ -4,14 +4,17 @@ Landing page introducing the Mini Apps published by Shinya Dev for the
 World App ecosystem. Deployed at **https://world-id-app.vercel.app/**.
 
 Apps featured:
-- **DailyPredict** — Daily prediction game. Social category.
-- **MealPact** — AI calorie tracker with WLD commitment. Productivity category.
+- **TuringVote** — 2-choice poll app for World ID Verified Humans only. Social category. (Live)
+
+Past entries (DailyPredict, MealPact and others) have been retired and are no
+longer linked from the landing page. The hub is the canonical Official Website
+referenced from the Worldcoin Developer Portal for currently active apps.
 
 ## Structure
 
 - `index.html` — Main landing page
-- `privacy.html` — Privacy Policy (applies to both apps)
-- `terms.html` — Terms of Service (applies to both apps)
+- `privacy.html` — Privacy Policy (covers all currently active Mini Apps)
+- `terms.html` — Terms of Service (covers all currently active Mini Apps)
 
 Pure static HTML with Tailwind CDN. No build step required; Vercel serves
 directly.
@@ -19,9 +22,10 @@ directly.
 ## Deploy
 
 Connect this repository to the `world-id-app` Vercel project and it will
-auto-deploy to `world-id-app.vercel.app` on every `main` push.
+auto-deploy to `world-id-app.vercel.app` on every `main` push. Manual deploys
+can be triggered with `npx vercel deploy --prod` from this directory.
 
 ## Used by
 
-- Worldcoin Developer Portal — App Official Website field for both
-  DailyPredict and MealPact points here.
+- Worldcoin Developer Portal — App **Official Website** field for TuringVote
+  points here. Future Mini Apps will be added to this same hub.
